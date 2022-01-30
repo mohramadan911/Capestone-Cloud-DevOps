@@ -138,7 +138,7 @@ jobs:
       - attach_workspace:
           at: ~/
       - add_ssh_keys: 
-          fingerprints: [94:49:63:28:7b:44:5a:cc:dc:25:f8:2d:19:f9:f7:04]
+          fingerprints: [18:ae:75:0c:8b:9e:2c:3a:c9:3a:6a:af:bc:8b:08:f7]
       - run:
           name: Install dependencies
           command: |
@@ -164,7 +164,7 @@ jobs:
     steps:
       - checkout
       - add_ssh_keys: 
-          fingerprints: [94:49:63:28:7b:44:5a:cc:dc:25:f8:2d:19:f9:f7:04]
+          fingerprints: [18:ae:75:0c:8b:9e:2c:3a:c9:3a:6a:af:bc:8b:08:f7]
       - attach_workspace:
           at: ~/
       - run:
@@ -208,7 +208,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "94:49:63:28:7b:44:5a:cc:dc:25:f8:2d:19:f9:f7:04"
+            - "18:ae:75:0c:8b:9e:2c:3a:c9:3a:6a:af:bc:8b:08:f7"
       - attach_workspace:
           at: ~/
       - run:
@@ -239,13 +239,13 @@ workflows:
           filters:
             branches:
               only: [ main ]
-      # - configure-infrastructure:
+      - configure-infrastructure
       #     requires:
       #       - deploy-infrastructure
-      # - configure-cluster:
+      - configure-cluster
       #     requires:
       #       - configure-infrastructure
       #       - upload-docker
-      # - deploy-docker:
+      - deploy-docker
       #     requires:
       #       - configure-cluster
