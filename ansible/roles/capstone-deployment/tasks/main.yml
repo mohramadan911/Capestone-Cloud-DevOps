@@ -1,7 +1,8 @@
 - name: Copy deployment 
-  copy:
-    src: "../files/{{ ENVIRONMENT_NAME }}-deployment.yaml"
-    dest: $HOME
+  shell: "sudo cp ../ansible/capstone-deployment/files/{{ ENVIRONMENT_NAME }}-deployment.yaml ../"
+  # copy:
+  #   src: "../files/{{ ENVIRONMENT_NAME }}-deployment.yaml"
+  #   dest: $HOME
 
 - name: Apply deployment 
   shell: "kubectl apply -f {{ ENVIRONMENT_NAME }}-deployment.yaml"
