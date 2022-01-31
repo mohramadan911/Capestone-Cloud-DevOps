@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: capestoneproject-app
+  name: capstoneproject-app
 spec:
   type: LoadBalancer
   selector:
-    app: capestoneproject-app
+    app: capstoneproject-app
   ports:
     - protocol: TCP
       port: 80
