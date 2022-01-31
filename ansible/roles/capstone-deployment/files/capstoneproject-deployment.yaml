@@ -19,3 +19,4 @@ spec:
           image: mohramadan911/mycapstoneproject
           ports:
             - containerPort: 80
+

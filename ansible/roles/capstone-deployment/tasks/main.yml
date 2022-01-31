@@ -1,6 +1,6 @@
 - name: Copy deployment 
   copy:
-    src: "{{ ENVIRONMENT_NAME }}-deployment.yaml"
+    src: "../files/{{ ENVIRONMENT_NAME }}-deployment.yaml"
     dest: $HOME
 
 - name: Apply deployment 
