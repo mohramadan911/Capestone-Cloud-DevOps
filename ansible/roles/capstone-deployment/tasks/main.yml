@@ -1,5 +1,5 @@
 - name: Copy deployment 
-  shell: "sudo cp ../ansible/capstone-deployment/files/{{ ENVIRONMENT_NAME }}-deployment.yaml ../"
+  shell: "sudo cp {{ ENVIRONMENT_NAME }}-deployment.yaml ../"
   # copy:
   #   src: "../files/{{ ENVIRONMENT_NAME }}-deployment.yaml"
   #   dest: $HOME
