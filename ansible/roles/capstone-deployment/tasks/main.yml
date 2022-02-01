@@ -1,8 +1,10 @@
 - name: Copy deployment 
-  shell: "cp {{ ENVIRONMENT_NAME }}-deployment.yaml $HOME" 
-  # copy:
-  #   src: "{{ ENVIRONMENT_NAME }}-deployment.yaml"
-  #   dest: $HOME
+  # shell: "cp {{ ENVIRONMENT_NAME }}-deployment.yaml $HOME" 
+  copy:
+    src: "{{ ENVIRONMENT_NAME }}-deployment.yaml"
+    dest: $HOME
+    group: root
+    mode: '0600'
 - name: Apply deployment 
   shell: "kubectl apply -f {{ ENVIRONMENT_NAME }}-deployment.yaml"
   args:

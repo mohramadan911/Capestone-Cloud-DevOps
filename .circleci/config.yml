@@ -153,7 +153,7 @@ jobs:
               else
                 cat ~/inventory.txt
                 cd ansible
-                ansible-playbook -i ~/inventory.txt configure-server.yml
+                sudo ansible-playbook -i ~/inventory.txt configure-server.yml
               fi
           environment:
             ANSIBLE_HOST_KEY_CHECKING: false    
@@ -181,7 +181,7 @@ jobs:
               else
                 cat ~/inventory.txt
                 cd ansible
-                ansible-playbook -i ~/inventory.txt configure-cluster.yml
+                sudo ansible-playbook -i ~/inventory.txt configure-cluster.yml
               fi
           environment:
             ANSIBLE_HOST_KEY_CHECKING: false    
@@ -220,7 +220,7 @@ jobs:
           command: |
             cat ~/inventory.txt
             cd ansible
-            ansible-playbook -i ~/inventory.txt deploy-app.yml
+            sudo ansible-playbook -i ~/inventory.txt deploy-app.yml
           environment:
             ANSIBLE_HOST_KEY_CHECKING: false   
           no_output_timeout: 2m
