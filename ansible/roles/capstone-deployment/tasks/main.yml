@@ -4,6 +4,6 @@
     src: "{{ ENVIRONMENT_NAME }}-deployment.yml"
     dest: $HOME
 - name: Apply deployment 
-  shell: "kubectl apply -f {{ ENVIRONMENT_NAME }}-deployment.yml"
+  shell: "./bin/kubectl apply -f {{ ENVIRONMENT_NAME }}-deployment.yml"
   args:
     chdir: $HOME
