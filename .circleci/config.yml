@@ -156,7 +156,7 @@ jobs:
                 ansible-playbook -i ~/inventory.txt configure-server.yml
               fi
           environment:
-            ANSIBLE_HOST_KEY_CHECKING: false    
+            ANSIBLE_HOST_KEY_CHECKING: False    
 
   configure-cluster:
     docker:
