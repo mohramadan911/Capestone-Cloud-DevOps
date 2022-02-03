@@ -16,6 +16,7 @@ Working in AWS Using  Circle CI to implement Continuous Integration and Continuo
    > Confiure EKS Cluster
       - Apply deployment of the welcome application docker image
       - Apply Load Balancer Service
+   > Upload Docker locally
       - Update the deployment to run the latest Build
       - Check if deployment is successful
 
