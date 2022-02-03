@@ -23,4 +23,4 @@ Load Balancer IP :
 http://a91b7ba67449945529448c4215b23184-546996982.us-east-1.elb.amazonaws.com/
 
 
-This is was my main capstone project and Next challange fpr me I havee designed a python program to monitor pods which are running more than 7 days with specifc lable to search you can find in the following URL : https://github.com/mohramadan911/Share-Pods-logging.git 
+This is was my main capstone project and Next challange for me I have designed a python program to monitor pods which are running more than 7 days with specifc lable to search you can find in the following URL : https://github.com/mohramadan911/Share-Pods-logging.git 
